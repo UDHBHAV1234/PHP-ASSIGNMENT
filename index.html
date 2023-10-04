@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://4.bp.blogspot.com/-rLclhWq5ZWo/W1t4EpGBqeI/AAAAAAAABUs/vDeHyurOS8s5h7KI7e6OZuwHz9K6l-tAwCLcBGAs/s1600/2a997114-e96d-41b1-836e-fd3a465564c2.quality_lighter.inline_yes.jpg" alt="BMW">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="add_employee.php">Add Employee</a></li>
+                <li><a href="view_employees.php">View Employees</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Add Employee</h2>
+    <form action="process.php" method="post">
+        <label for="emp_name">Employee Name:</label>
+        <input type="text" name="emp_name" required>
+        
+        <label for="hours_worked">Hours Worked:</label>
+        <input type="number" name="hours_worked" required>
+        
+        <label for="absent_days">Absent Days:</label>
+        <input type="number" name="absent_days" required>
+        
+        <label for="punch_in">Punch-In Time:</label>
+        <input type="time" name="punch_in" required>
+        
+        <label for="punch_out">Punch-Out Time:</label>
+        <input type="time" name="punch_out" required>
+    
+        <input type="submit" value="Add Employee">
+    </form>
+
+    </main>
+    <footer>
+        &copy; 2023 BMW
+    </footer>
+</body>
+</html>
